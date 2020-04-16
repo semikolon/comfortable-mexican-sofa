@@ -6,13 +6,14 @@ before_script:
 script:
   - rake ci
 rvm:
-  - 2.2.7
-  - 2.3.5
   - 2.4.2
+  - 2.5.1
 gemfile:
   - test/gemfiles/Gemfile.rails.5.2
+  - test/gemfiles/Gemfile.rails.6.0
 branches:
   only:
     - master
+    - rails6
 matrix:
   fast_finish: true

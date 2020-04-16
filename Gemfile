@@ -4,6 +4,7 @@ gemspec
 
 # apps can also use will_paginate so there's no dependency in gemspec
 gem 'kaminari'
+gem 'codemirror-rails', github: 'zinsbaustein/codemirror-rails', branch: 'rails6'
 
 group :development do
   gem 'awesome_print'

@@ -17,3 +17,7 @@ branches:
     - rails6
 matrix:
   fast_finish: true
+jobs:
+  exclude:
+  - rvm: 2.4.2
+    gemfile: test/gemfiles/Gemfile.rails.6.0

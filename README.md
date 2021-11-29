@@ -79,7 +79,7 @@ For more information please refer to [Wiki](https://github.com/comfy/comfortable
 
 #### Dependencies
 
-* Install [ImageMagick](http://www.imagemagick.org/) for [paperclip](https://github.com/thoughtbot/paperclip)'s image processing
+* Install [ImageMagick](http://www.imagemagick.org/) for [kt-paperclip](https://github.com/kreeti/kt-paperclip)'s image processing
 * Make sure that Gemfile has either [kaminari](https://github.com/amatsuda/kaminari) or [will_paginate](https://github.com/mislav/will_paginate)
 
 #### Help and Contact

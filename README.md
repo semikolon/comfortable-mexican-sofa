@@ -75,7 +75,8 @@ on [Content Tags](https://github.com/comfy/comfortable-mexican-sofa/wiki/Docs:-C
 [Comfy Demo App](https://github.com/comfy/comfy-demo) also can be used as an
 example of a default Rails app with CMS installed.
 
-## Add-ons
+* Install [ImageMagick](http://www.imagemagick.org/) for [kt-paperclip](https://github.com/kreeti/kt-paperclip)'s image processing
+* Make sure that Gemfile has either [kaminari](https://github.com/amatsuda/kaminari) or [will_paginate](https://github.com/mislav/will_paginate)
 
 If you want to add a Blog functionality to your app take a look at
 [ComfyBlog](https://github.com/comfy/comfy-blog).

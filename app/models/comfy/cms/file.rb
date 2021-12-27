@@ -19,6 +19,7 @@ class Comfy::Cms::File < ActiveRecord::Base
 
   # -- Relationships -----------------------------------------------------------
   belongs_to :site
+  belongs_to :block, optional: true
 
   # -- Callbacks ---------------------------------------------------------------
   before_validation :assign_label, on: :create

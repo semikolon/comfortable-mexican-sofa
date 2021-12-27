@@ -158,6 +158,15 @@ class ActionView::TestCase
 
   end
 
+  # Attaching http_auth stuff with request. Example use:
+  #   http_auth :get, '/cms-admin/pages'
+  def http_auth(method, path, options = {}, username = 'username', password = 'password')
+    headers = options[:headers] || {}
+    headers['HTTP_AUTHORIZATION'] = "Basic #{Base64.encode64(username + ':' + password)}"
+    options[:headers] = headers
+    send(method, path, options)
+  end
+  
   setup do
     @request = FakeRequest.new
   end

@@ -4,16 +4,9 @@ source "http://rubygems.org"
 
 gemspec
 
-group :development, :test do
-  gem "autoprefixer-rails", "~> 8.1.0"
-  gem "byebug",             "~> 10.0.0", platforms: %i[mri mingw x64_mingw]
-  gem "capybara",           "~> 2.17.0"
-  gem "kaminari",           "~> 1.1.1"
-  gem "puma",               "~> 3.12.2"
-  gem "rubocop",            "~> 0.55.0", require: false
-  gem "selenium-webdriver", "~> 3.9.0"
-  gem "sqlite3",            "~> 1.4.2"
-end
+# apps can also use will_paginate so there's no dependency in gemspec
+gem 'kaminari'
+gem 'codemirror-rails', github: 'zinsbaustein/codemirror-rails', branch: 'rails6'
 
 group :development do
   gem "listen",       "~> 3.1.5"
